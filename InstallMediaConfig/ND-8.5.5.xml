@@ -1,0 +1,58 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>IBMProductMedia</T>
+      <T>System.Object</T>
+    </TN>
+    <ToString>IBMProductMedia</ToString>
+    <Props>
+      <S N="Name">IBM WebSphere Application Server Network Deployment</S>
+      <S N="ShortName">WASND855</S>
+      <Version N="Version">8.5.5</Version>
+      <Obj N="MediaFiles" RefId="1">
+        <TN RefId="1">
+          <T>MediaFile[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <Obj RefId="2">
+            <TN RefId="2">
+              <T>MediaFile</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>MediaFile</ToString>
+            <Props>
+              <S N="Name">WASND_v8.5.5_1of3.zip</S>
+              <S N="RepositoryConfigPath">repository.config</S>
+              <I64 N="SizeOnDisk">1079164928</I64>
+              <Nil N="SubMediaFiles" />
+            </Props>
+          </Obj>
+          <Obj RefId="3">
+            <TNRef RefId="2" />
+            <ToString>MediaFile</ToString>
+            <Props>
+              <S N="Name">WASND_v8.5.5_2of3.zip</S>
+              <Nil N="RepositoryConfigPath" />
+              <I64 N="SizeOnDisk">1077190656</I64>
+              <Nil N="SubMediaFiles" />
+            </Props>
+          </Obj>
+          <Obj RefId="4">
+            <TNRef RefId="2" />
+            <ToString>MediaFile</ToString>
+            <Props>
+              <S N="Name">WASND_v8.5.5_3of3.zip</S>
+              <Nil N="RepositoryConfigPath" />
+              <I64 N="SizeOnDisk">982904832</I64>
+              <Nil N="SubMediaFiles" />
+            </Props>
+          </Obj>
+        </LST>
+      </Obj>
+      <Nil N="RequiredFixesMediaFiles" />
+      <Nil N="RequiredProducts" />
+    </Props>
+  </Obj>
+</Objs>
