@@ -133,7 +133,7 @@ DSC Resource or by leveraging the [x7Zip DSC Module](https://www.powershellgalle
 
 ## Versions
 
-### 1.0.6
+### 1.1.0
 * New DSC Resources for 
 	* managing JVM settings **cIBMWebSphereJVMSettings**
 	* managing IBM WebSphere Application Cluster **cIBMWebSphereAppServerClusterMember**
@@ -208,8 +208,8 @@ Note: This requires the following DSC modules:
 Configuration WASND
 {
     Import-DscResource -ModuleName 'PSDesiredStateConfiguration'
-    Import-DSCResource -ModuleName 'cIBMInstallationManager'
-    Import-DSCResource -ModuleName 'cIBMWebSphereAppServer'
+    Import-DSCResource -ModuleName 'cIBMInstallationManager' -ModuleVersion '1.0.7'
+    Import-DSCResource -ModuleName 'cIBMWebSphereAppServer' -ModuleVersion '1.1.0'
     Package SevenZip {
         Ensure = 'Present'
         Name = '7-Zip 9.20 (x64 edition)'
@@ -221,7 +221,7 @@ Configuration WASND
         Ensure = 'Present'
         InstallationDirectory = 'C:\IBM\IIM'
         Version = '1.8.3'
-        SourcePath = 'C:\Media\agent.installer.win32.win32.x86_1.8.3000.20150606_0047.zip'
+        SourcePath = 'C:\Media\agent.installer.win32.win32.x86_64_1.8.4001.20160217_1716.zip'
         DependsOn= '[Package]SevenZip'
     }
     cIBMWebSphereAppServer WASNDInstall
