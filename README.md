@@ -12,9 +12,9 @@ PS> Install-Module -Name cIBMWebSphereAppServer
 * **cIBMWebSphereAppServer** installs IBM WebSphere Application Server on target machine.
 * **cIBMWebSphereAppServerFixpack** applies a Websphere Fixpack on the target machine
 * **cIBMWebSphereAppServerProfile** creates a WebSphere profile.
-* **cIBMWebSphereJVMSettings** manages the JVM settings of a WebSphere server. Deprecated used cIBMPropertiesBasedConfiguration instead
+* **cIBMWebSphereJVMSettings** manages the JVM settings of a WebSphere server.
 * **cIBMWebSphereAppServerClusterMember** create IBM WebSphere Application Cluster.
-* **cIBMWebSphereVariables** manage WebSphere Variables settings of an IBM WebSphere Application Server. Deprecated used cIBMPropertiesBasedConfiguration instead
+* **cIBMWebSphereVariables** manage WebSphere Variables settings of an IBM WebSphere Application Server.
 * **cIBMWebSphereMutualAuthSSL** manage IBM WebSphere Mutual Auth SSL.
 * **cIBMPropertiesBasedConfiguration** manage IBM WebSphere PropertiesBased Configuration.
 
