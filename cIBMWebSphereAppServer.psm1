@@ -938,7 +938,7 @@ class cIBMWebSphereAppServerClusterMember {
         }
         #Start Cluster
         Write-Verbose ("Ripple Starting the Cluster : " + $this.ClusterName)
-        Start-WebSphereAppServerCluster $this.ClusterName $profilePath $this.AdminCredential | Out-Null
+        Start-WebSphereAppServerCluster $this.ClusterName $profilePath $this.AdminCredential -RippleStart | Out-Null
     }
     
     [bool] Test() {
