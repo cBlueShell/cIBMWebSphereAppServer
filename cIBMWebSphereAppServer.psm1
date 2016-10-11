@@ -550,7 +550,9 @@ class cIBMWebSphereAppServerProfile {
                                             -WASEdition ND -StartupType Automatic
                         Write-Verbose -Message (" Windows Service is created for NodeAgent and service started:"+$nodeAgentSvcName)
                         # First time stop via batch and then start via windows service
-                        Stop-WebSphereServer $this.ServerName
+                        if ($this.ServerName) {
+                            Stop-WebSphereServer $this.ServerName
+                        }
                         Stop-WebSphereNodeAgent -NodeName $this.NodeAgentName `
                                             -ProfileDir $this.ProfilePath `
                                             -WebSphereAdministratorCredential $this.AdminCredential `
@@ -558,7 +560,9 @@ class cIBMWebSphereAppServerProfile {
                         
                         # Now via windows service
                         Start-WebSphereNodeAgent -ProfileDir $this.ProfilePath
-                        Start-WebSphereServer -ServerName $this.ServerName -ProfilePath $this.ProfilePath
+                        if ($this.ServerName) {
+                            Start-WebSphereServer -ServerName $this.ServerName -ProfilePath $this.ProfilePath
+                        }
                     }
 				}
 				

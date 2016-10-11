@@ -9,7 +9,7 @@
 RootModule = 'cIBMWebSphereAppServer.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.1.2'
+ModuleVersion = '1.1.3'
 
 # ID used to uniquely identify this module
 GUID = '325e1620-53fc-43bd-8380-80f702c2e8c0'
@@ -53,8 +53,8 @@ PowerShellVersion = '5.0'
 
 # Modules that must be imported into the global environment prior to importing this module
 RequiredModules = @(
-    @{ ModuleName = 'cIBMInstallationManager'; ModuleVersion = '1.0.7'},
-    @{ ModuleName = 'PsTokens'; ModuleVersion = '0.0.1'}
+    @{ ModuleName = 'cIBMInstallationManager'; RequiredVersion = '1.0.7'},
+    @{ ModuleName = 'PsTokens'; RequiredVersion = '0.0.1'}
 )
 
 # Name of the Windows PowerShell host required by this module

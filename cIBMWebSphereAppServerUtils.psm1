@@ -2374,7 +2374,7 @@ Function New-WebSphereAppServerClusterMember{
         [PSCredential] $AdminCredential
     )
     $result = $False
-    $wasCmd = "AdminClusterManagement.createClusterMember($ClusterName, $NodeName, $ServerName)"
+    $wasCmd = "AdminClusterManagement.createClusterMember('$ClusterName', '$NodeName', '$ServerName')"
 	$wasProc = Invoke-WsAdmin `
 							-ProfilePath $ProfilePath `
 							-Commands @($wasCmd) `
